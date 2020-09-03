@@ -1,0 +1,94 @@
+.about {
+    padding-bottom: 2rem;
+
+    &__bio-image {
+        height: 45vh;
+        width: 100%;
+        background:
+            linear-gradient(to right,
+                rgba($primary, 0.7),
+                rgba($primary, 0.3)),
+            url('../assets/img/18.jpg');
+        background-position: 0 25%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__bio {
+        width: 80%;
+        text-align: center;
+
+        &__headtext {
+            color: lighten($primary, 15%);
+            ;
+            font-size: $font-xl - 0.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            padding: 0.5rem 0 2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__work {
+        width: 85vw;
+        margin: auto;
+
+        h1 {
+            padding: 2rem 0 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            // color: lighten($secondary, 25%);
+            color: darken($primary, 25%);
+        }
+
+        .about__works {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__single {
+                text-align: center;
+                flex-basis: 45%;
+                background: darken($primary, 7%);
+                padding: 1rem;
+                margin: 1rem;
+                border-bottom: 0.4rem solid $secondary;
+                flex-grow: 1;
+                min-height: 160px;
+
+                h2 {
+                    color: darken($primary, 30%);
+                    font-weight: 600;
+                    margin: 1.6rem 0 1rem;
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        transform: rotate(90deg) translate(-55px, 74px);
+        -webkit-transform: rotate(90deg) translate(-55px, 74px);
+        -moz-transform: rotate(90deg) translate(-55px, 74px);
+        -ms-transform: rotate(90deg) translate(-55px, 74px);
+        -o-transform: rotate(90deg) translate(-55px, 74px);
+    }
+}
+
+
+
+// footer {
+//     transform: rotate(90deg) translate(-55px , -80px);
+//     -webkit-transform: rotate(90deg) translate(-55px , -80px);
+//     -moz-transform: rotate(90deg) translate(-55px , -80px);
+//     -ms-transform: rotate(90deg) translate(-55px , -80px);
+//     -o-transform: rotate(90deg) translate(-55px , -80px);
+// }

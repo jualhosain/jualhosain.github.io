@@ -1,0 +1,53 @@
+
+$primary: rgb(4, 160, 172);
+//  $primary:#669dad;
+// $primary:#ffffff;
+$secondary: navy;
+// $secondary: #4ed460;
+$font-sm:1rem;
+$font-md:2rem;
+$font-lg:3rem;
+$font-xl:4rem;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}

@@ -1,0 +1,82 @@
+// @include media-md {
+//     .menu-btn {
+//         visibility: hidden;
+//     }
+
+//     nav {
+//         visibility: visible;
+
+//         .menu-nav {
+//             display: block;
+//             transform: translateY(0);
+//             -webkit-transform: translateY(0);
+//             -moz-transform: translateY(0);
+//             -ms-transform: translateY(0);
+//             -o-transform: translateY(0);
+//             height: 100%;
+//             background: transparent;
+
+//             &__item {
+//                 transform: translateX(0);
+//                 -webkit-transform: translateX(0);
+//                 -moz-transform: translateX(0);
+//                 -ms-transform: translateX(0);
+//                 -o-transform: translateX(0);
+//             }
+//         }
+//     }
+
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    nav {
+        visibility: visible;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90vw;
+
+        .logo {
+            display:block;
+            font-size: $font-md - 0.2rem;
+            background: $secondary;
+            margin: 0 1rem;
+            padding: 0.2rem;
+
+            h2 {
+                font-weight: 700;
+            }
+        }
+
+        .menu-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 100%;
+            width: 100%;
+            float: right;
+            background: transparent;
+
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+
+            &__item {
+                margin: 0 1rem;
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+                -moz-transform: translateX(0);
+                -ms-transform: translateX(0);
+                -o-transform: translateX(0);
+            }
+
+            &__link {
+                font-size: $font-sm + 0.5rem;
+            }
+        }
+    }
+}
