@@ -1,0 +1,138 @@
+.worked {
+    padding-bottom: 2rem;
+
+    &__work-image {
+        height: 45vh;
+        width: 100%;
+        background:
+            linear-gradient(to right,
+                rgba($primary, 0.7),
+                rgba($primary, 0.3)),
+            url('../assets/img/15.jpg');
+        background-position: 0 25%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__work {
+        width: 80%;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &__headtext {
+            color: lighten($primary, 15%);
+            ;
+            font-size: $font-xl - 0.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            padding: 0.5rem 0 3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__work {
+        width: 85vw;
+        margin: auto;
+
+        h1 {
+            padding: 2rem 0 1rem;
+            text-align: center;
+            font-size: $font-md +0.2rem;
+            font-weight: 600;
+            color: darken($primary, 25%);
+            text-transform: uppercase;
+        }
+
+        .worked__works {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            &__single {
+                flex-basis: 45%;
+                min-height: 15rem;
+                background: darken($primary, 10%);
+                padding: 1rem;
+                margin: 1rem;
+                border-bottom: 0.7rem solid $secondary;
+                flex-grow: 1;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .text-header {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding: 2rem;
+                    top: 0;
+                    left: -100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background: rgba($secondary, 0.9);
+                    z-index: 2;
+
+                    @include transition-ease;
+
+                    &.active {
+                        left: 0;
+                    }
+
+                    h2 {
+                        color: $primary;
+                        font-weight: 600;
+                        font-size: $font-sm + 0.8rem;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        color: #fff;
+                        padding: 0.6rem 0 1rem;
+                    }
+
+                    .works_btn {
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom:-1rem;
+                        padding: 0 1rem;
+
+
+                        &__link {
+                            cursor: pointer;
+                            padding: 0 0.5rem;
+
+                            &:hover {
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        transform: rotate(90deg) translate(-55px, 74px);
+        -webkit-transform: rotate(90deg) translate(-55px, 74px);
+        -moz-transform: rotate(90deg) translate(-55px, 74px);
+        -ms-transform: rotate(90deg) translate(-55px, 74px);
+        -o-transform: rotate(90deg) translate(-55px, 74px);
+    }
+}
