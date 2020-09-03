@@ -1,2 +1,2 @@
 ## Md Jual Hosain
-Go to [jualhosain.github.io](jualhosain.github.io) to view it in the browser.
+Go to [https://jualhosain.github.io](https://jualhosain.github.io) to view it in the browser.
