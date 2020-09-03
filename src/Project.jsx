@@ -1,6 +1,7 @@
 import React from 'react'
 import Single from './project_single/singleWork'
 import data from './project_single/project'
+import Social from './project_single/social'
 const Project = () => {
     return (
         <>
@@ -25,20 +26,7 @@ const Project = () => {
                             })}
                         </div>
                     </div>
-                    <div class="social-icons">
-                        <a href="#">
-                            <i class='fab fa-twitter fa-2x'></i>
-                        </a>
-                        <a href="#">
-                            <i class='fab fa-facebook fa-2x'></i>
-                        </a>
-                        <a href="#">
-                            <i class='fab fa-instagram fa-2x'></i>
-                        </a>
-                        <a href="#">
-                            <i class='fab fa-github fa-2x'></i>
-                        </a>
-                    </div>
+                    <Social />
                     <footer>&copy; Copyright 2020</footer>
                 </section>
             </main>

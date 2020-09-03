@@ -1,4 +1,5 @@
 import React from 'react'
+import Social from './project_single/social'
 const About = () => {
 return (
         <>
@@ -38,20 +39,7 @@ return (
                         </div>
                     </div>
                 </div>
-                <div className="social-icons">
-                    <a href="#">
-                        <i className='fab fa-twitter fa-2x'></i>
-                    </a>
-                    <a href="#">
-                        <i className='fab fa-facebook fa-2x'></i>
-                    </a>
-                    <a href="#">
-                        <i className='fab fa-instagram fa-2x'></i>
-                    </a>
-                    <a href="#">
-                        <i className='fab fa-github fa-2x'></i>
-                    </a>
-                </div>
+                <Social />
                 <footer>&copy; Copyright 2020</footer>
             </section>
         </main>
