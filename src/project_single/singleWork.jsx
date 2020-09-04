@@ -1,5 +1,5 @@
 import React from 'react'
-const Single = (props) => {
+const SingleWork = (props) => {
 return (
         <>
         <div class="worked__works__single">
@@ -20,4 +20,4 @@ return (
         </>
     )
 }
-export default Single;
+export default SingleWork;

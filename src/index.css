@@ -448,7 +448,7 @@ nav .menu-nav__link:hover {
     -o-transition: all 0.5s ease-in-out;
 }
 
-.worked__work .worked__works__single .text-header.active {
+.worked__work .worked__works__single:hover .text-header {
     left: 0;
 }
 

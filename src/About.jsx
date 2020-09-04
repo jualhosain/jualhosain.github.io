@@ -1,8 +1,7 @@
 import React from 'react'
-import Social from './project_single/social'
+import Social from './Social'
 const About = () => {
 return (
-        <>
         <main>
             <section className="about">
                 <div className="about__bio-image">
@@ -43,7 +42,6 @@ return (
                 <footer>&copy; Copyright 2020</footer>
             </section>
         </main>
-        </>
     )
 }
 export default About;

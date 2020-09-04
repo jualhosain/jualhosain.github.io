@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Nav from './navbar'
 import Home from './Home'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -7,7 +7,6 @@ import Contact from './Contact'
 import Project from './Project'
 
 function App() {
-
   return (
     <Router>
       <Nav />

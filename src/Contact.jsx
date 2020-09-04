@@ -1,5 +1,5 @@
 import React from 'react'
-import Social from './project_single/social'
+import Social from './Social'
 const Contact = () => {
 return (
         <>

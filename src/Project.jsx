@@ -1,7 +1,8 @@
 import React from 'react'
-import Single from './project_single/singleWork'
+import SingleWork from './project_single/singleWork'
 import data from './project_single/project'
-import Social from './project_single/social'
+import Social from './Social'
+
 const Project = () => {
     return (
         <>
@@ -22,7 +23,7 @@ const Project = () => {
                         <h1>Some Of My Work!</h1>
                         <div class="worked__works">
                             {data.map(a => {
-                                return <Single {...a} />
+                                return <SingleWork {...a} />
                             })}
                         </div>
                     </div>
