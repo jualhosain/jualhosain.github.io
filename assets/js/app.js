@@ -1,4 +1,4 @@
-window.onload = ()=>{
+window.onload = () => {
     const menuBtn = document.querySelector('.menu-btn');
     const hamburger = document.querySelector('.menu-btn__burger');
     const nav = document.querySelector('nav');
@@ -31,16 +31,16 @@ window.onload = ()=>{
     }
 
 
-    work_hover.forEach(a => {
-        a.addEventListener('mouseover', function () {
-            this.lastElementChild.classList.add('active');
-        });
+    // work_hover.forEach(a => {
+    //     a.addEventListener('mouseover', function () {
+    //         this.lastElementChild.classList.add('active');
+    //     });
 
-        a.addEventListener('mouseout', function () {
-            this.lastElementChild.classList.remove('active');
-        });
+    //     a.addEventListener('mouseout', function () {
+    //         this.lastElementChild.classList.remove('active');
+    //     });
 
-    });
+    // });
 
     nav_link.forEach(aa => {
         aa.addEventListener('click', () => {
